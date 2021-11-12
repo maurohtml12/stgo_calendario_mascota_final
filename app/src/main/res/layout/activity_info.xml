@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".Info_act">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="380dp"
+        android:layout_height="254dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="15dp"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="174dp"
+                app:srcCompat="@drawable/icono" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="    Calendario Mascota"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="377dp"
+        android:layout_height="407dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="30dp"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="365dp"
+                android:layout_height="203dp"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="11dp"
+                android:text="Somos una empresa enfocada  en ofrecer un asolucion practica  y util para todo dueño de mascotas organizando toda la informacion sobre la salud , ficha y ubicacion de tu mascota con el fin de que puedas preocuparte de algo menos sabiendo que todo lo relacionado con ella esta en tus manos."
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="189dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="105dp"
+                android:layout_marginEnd="82dp"
+                android:text="Contactanos:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+            <LinearLayout
+                android:layout_width="359dp"
+                android:layout_height="61dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="80dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView20">
+
+                <ImageButton
+                    android:layout_width="51dp"
+                    android:layout_height="58dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:onClick="llamanos"
+                    app:srcCompat="@android:drawable/sym_action_call"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <ImageButton
+                    android:layout_width="138dp"
+                    android:layout_height="58dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:onClick="localizacion"
+                    app:srcCompat="@drawable/localizacion"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <ImageButton
+                    android:layout_width="49dp"
+                    android:layout_height="61dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:onClick="evaluacion"
+                    app:srcCompat="@android:drawable/ic_dialog_email"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
