@@ -4,6 +4,212 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
     tools:context=".Vacunas_act">
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="387dp"
+        android:layout_height="239dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="12dp"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="154dp"
+                android:layout_height="156dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="41dp"
+                android:layout_marginBottom="42dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/vacunavac" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="186dp"
+                android:layout_height="156dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="41dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginBottom="42dp"
+                android:text="Aqui podras mantener el registro de las vacunas que tiene tu mascota y adicionalmente consultar  la fecha de su proxima vacuna , como tambien modificar , eliminar  estas mismas."
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView5"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="385dp"
+        android:layout_height="434dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="17dp"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView4" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="425dp">
+
+            <EditText
+                android:id="@+id/number"
+                android:layout_width="265dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="58dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="62dp"
+                android:ems="10"
+                android:hint="Numero de vacuna"
+                android:inputType="textPersonName"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView22"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/vaccine"
+                android:layout_width="269dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="60dp"
+                android:ems="10"
+                android:hint="Nombre vacuna"
+                android:inputType="textPersonName"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/number" />
+
+            <EditText
+                android:id="@+id/dateinoc"
+                android:layout_width="267dp"
+                android:layout_height="47dp"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="62dp"
+                android:ems="10"
+                android:hint="Fecha de Inoculacion"
+                android:inputType="textPersonName"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/vaccine"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/datenext"
+                android:layout_width="269dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="60dp"
+                android:ems="10"
+                android:hint="Fecha proxima Inoculacion"
+                android:inputType="textPersonName"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dateinoc"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="288dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="58dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="39dp"
+                android:text="Ingrese los datos solicitados"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout9"
+                android:layout_width="340dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="27dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/datenext">
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="saveVacuna"
+                    android:text="AÑADIR "
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="consultVacuna"
+                    android:text="CONSULTAR"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="341dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="23dp"
+                android:layout_marginEnd="21dp"
+                android:layout_marginBottom="40dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout9">
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="deleteVacuna"
+                    android:text="ELIMINAR"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="updateVacuna"
+                    android:text="MODIFICAR"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
