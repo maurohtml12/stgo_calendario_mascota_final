@@ -18,6 +18,7 @@ public class AdminSQLiteOpenHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
          //se define modelo de trabajo...
         db.execSQL("CREATE TABLE vacunas(numero int primary key, vacuna text, inoculacion text, proxima text)");
+        db.execSQL("CREATE TABLE mascotas(numero int primary key, nombre text, tipo text,raza text,edad text, nacim text )");
 
     }
      //permite realizar cambio esquematicos

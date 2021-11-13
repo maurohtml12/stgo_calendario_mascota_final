@@ -37,7 +37,7 @@ public class Vacunas_act extends AppCompatActivity {
         String ino = inoc.getText().toString();
         String nex = next.getText().toString();
 
-        if (num.isEmpty() || vac.isEmpty() || !ino.isEmpty() || nex.isEmpty()){
+        if (!num.isEmpty() && !vac.isEmpty() && !ino.isEmpty() && !nex.isEmpty()){
             //creo el registro
             ContentValues conten = new ContentValues();//contiene valores
             conten.put("numero", num);
