@@ -18,7 +18,9 @@
         <entry key="app/src/main/res/layout/activity_fichamascota.xml" value="0.11730072463768115" />
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_insumos.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_iot.xml" value="0.12273550724637682" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_mqtt.xml" value="0.12273550724637682" />
         <entry key="app/src/main/res/layout/activity_salud.xml" value="0.13994565217391305" />
         <entry key="app/src/main/res/layout/activity_vacunas.xml" value="0.25" />
       </map>

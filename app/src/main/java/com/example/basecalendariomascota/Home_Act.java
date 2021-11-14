@@ -50,4 +50,12 @@ public class Home_Act extends AppCompatActivity {
 
     }
 
+    public void mqtt(View View)
+    {
+        Intent i = new Intent(this, MainActivity.class);
+        startActivity(i);// inicia actividad
+        Toast.makeText(Home_Act.this, "Salir", Toast.LENGTH_LONG).show();
+
+    }
+
 }

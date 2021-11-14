@@ -13,7 +13,7 @@ import android.widget.Toast;
 import com.example.basecalendariomascota.database.AdminSQLiteOpenHelper;
 
 public class Fichamascota_act extends AppCompatActivity {
-    private EditText nombre, nchip, tipo, raza, edad, nacimiento, nombrebuscador;
+    private EditText nombre, nchip, tipo, raza, edad, nacimiento;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +30,7 @@ public class Fichamascota_act extends AppCompatActivity {
 
     public void savemascota(View view) {
         //obtengo mi base de datos
-        AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this, "calendariomascota", null, 1);
+        AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this, "mascotasbd", null, 1);
         SQLiteDatabase bd = admin.getWritableDatabase();//permisos de sobre escritura...
         //obtengo los datos de la interfaz
         String numero = nchip.getText().toString();
@@ -43,7 +43,7 @@ public class Fichamascota_act extends AppCompatActivity {
         if (!numero.isEmpty() && !name.isEmpty() && !type.isEmpty() && !pedr.isEmpty() && !edadm.isEmpty() && !naci.isEmpty()) {
             //creo el registro
             ContentValues conten = new ContentValues();//contiene valores
-            conten.put("numero", numero);
+            conten.put("numeros", numero);
             conten.put("nombre", name);
             conten.put("tipo", type);
             conten.put("raza", pedr);
@@ -64,15 +64,16 @@ public class Fichamascota_act extends AppCompatActivity {
 
 
 
-    public void cleanMascota (View view){
-        nombre.setText("");
-        nchip.setText("");
-        tipo.setText("");
-        raza.setText("");
-        edad.setText("");
-        nacimiento.setText("");
-        nombrebuscador.setText("");
-    }
 
+
+        public void cleanMascota (View view){
+            nombre.setText("");
+            nchip.setText("");
+            tipo.setText("");
+            raza.setText("");
+            edad.setText("");
+            nacimiento.setText("");
+
+        }
 }
 
