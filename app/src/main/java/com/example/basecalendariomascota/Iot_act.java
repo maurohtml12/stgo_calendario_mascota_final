@@ -12,6 +12,6 @@ public class Iot_act extends AppCompatActivity {
         setContentView(R.layout.activity_iot);
 
 
-        // en desarrollo interacion mqtt...
+
     }
 }

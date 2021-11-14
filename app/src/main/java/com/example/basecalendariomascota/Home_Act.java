@@ -50,11 +50,11 @@ public class Home_Act extends AppCompatActivity {
 
     }
 
-    public void mqtt(View View)
+    public void iot(View View)
     {
-        Intent i = new Intent(this, MainActivity.class);
+        Intent i = new Intent(this, Iot_act.class);
         startActivity(i);// inicia actividad
-        Toast.makeText(Home_Act.this, "Salir", Toast.LENGTH_LONG).show();
+        Toast.makeText(Home_Act.this, "Bienvenido a su comedero mascotas", Toast.LENGTH_LONG).show();
 
     }
 

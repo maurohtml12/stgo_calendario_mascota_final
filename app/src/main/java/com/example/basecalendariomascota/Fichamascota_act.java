@@ -13,7 +13,7 @@ import android.widget.Toast;
 import com.example.basecalendariomascota.database.AdminSQLiteOpenHelper;
 
 public class Fichamascota_act extends AppCompatActivity {
-    private EditText nombre, nchip, tipo, raza, edad, nacimiento;
+    private EditText nombre, nchip, tipo, raza, edad, nacimiento, busqueda;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,12 +25,13 @@ public class Fichamascota_act extends AppCompatActivity {
         raza = findViewById(R.id.rmas);
         edad = findViewById(R.id.emas);
         nacimiento = findViewById(R.id.namas);
+        busqueda = findViewById(R.id.busq);
 
     }
 
     public void savemascota(View view) {
         //obtengo mi base de datos
-        AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this, "mascotasbd", null, 1);
+        AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this, "calendariomascota", null, 1);
         SQLiteDatabase bd = admin.getWritableDatabase();//permisos de sobre escritura...
         //obtengo los datos de la interfaz
         String numero = nchip.getText().toString();
@@ -59,6 +60,31 @@ public class Fichamascota_act extends AppCompatActivity {
             //mensaje de error
             Toast.makeText(this, "No se puede guardar mascota sin datos", Toast.LENGTH_SHORT).show();
 
+        }
+    }
+    public void consultmascota(View view) {
+        //obtengo mi base de datos
+        AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this, "calendariomascota", null, 1);
+        SQLiteDatabase bd = admin.getWritableDatabase();//permisos de sobre escritura...
+
+        String name = busqueda.getText().toString();
+
+        if (!name.isEmpty()) {
+            Cursor file = bd.rawQuery("select * from mascotas where numeros="+name, null);
+            if (file.moveToFirst()) {
+                //nchip.setText(file.getString(1));
+                nombre.setText(file.getString(1));
+                tipo.setText(file.getString(2));
+                raza.setText(file.getString(3));
+                edad.setText(file.getString(4));
+                nacimiento.setText(file.getString(5));
+
+            } else {
+                Toast.makeText(this, "No existe mascota con ese numero", Toast.LENGTH_SHORT).show();
+            }
+
+        } else {
+            Toast.makeText(this, "No se puede consultar mascota sin datos", Toast.LENGTH_SHORT).show();
         }
     }
 
