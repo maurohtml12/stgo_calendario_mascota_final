@@ -43,7 +43,7 @@
                 android:layout_marginStart="26dp"
                 android:layout_marginTop="7dp"
                 android:layout_marginEnd="25dp"
-                android:text="     Bienevenido a tu calendario de mascota"
+                android:text="     Bienvenido a tu calendario de mascota"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"

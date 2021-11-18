@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient_background"
-    tools:context=".Iot_act">
+    tools:context=".MainActivity">
 
     <androidx.cardview.widget.CardView
         android:layout_width="375dp"
@@ -60,28 +60,32 @@
                     app:cornerRadius="25dp" />
 
                 <Button
-                    android:id="@+id/button2"
+                    android:id="@+id/btn22"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:backgroundTint="#8BC34A"
+                    android:onClick="comida"
                     android:text="PROGRAMAR"
                     app:cornerRadius="25dp" />
             </LinearLayout>
 
-            <ImageView
-                android:id="@+id/imageView6"
-                android:layout_width="270dp"
-                android:layout_height="345dp"
-                android:layout_marginStart="49dp"
-                android:layout_marginTop="34dp"
-                android:layout_marginEnd="55dp"
-                android:layout_marginBottom="87dp"
+            <TextView
+                android:id="@+id/txttime"
+                android:layout_width="335dp"
+                android:layout_height="118dp"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="29dp"
+                android:layout_marginEnd="19dp"
+                android:layout_marginBottom="319dp"
+                android:hint="Aparecera la hora de la comida"
+                android:textSize="20sp"
+                android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/linearLayout10"
-                app:srcCompat="@drawable/bienve" />
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout10" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

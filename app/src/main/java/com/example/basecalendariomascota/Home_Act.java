@@ -50,7 +50,7 @@ public class Home_Act extends AppCompatActivity {
 
     }
 
-    public void iot(View View)
+    public void comedero(View View)
     {
         Intent i = new Intent(this, Iot_act.class);
         startActivity(i);// inicia actividad

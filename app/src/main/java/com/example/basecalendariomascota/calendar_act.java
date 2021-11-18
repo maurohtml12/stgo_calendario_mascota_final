@@ -40,15 +40,6 @@ public class calendar_act extends AppCompatActivity {
         int hora = cal.get(Calendar.HOUR_OF_DAY);
         int minutos = cal.get(Calendar.MINUTE);
 
-        DatePickerDialog dpd = new DatePickerDialog(calendar_act.this, new DatePickerDialog.OnDateSetListener() {
-            @Override
-            public void onDateSet(DatePicker datePicker, int year, int month, int day) {
-
-                String fecha =  day + "/" + month + "/" + year;
-                citas.setText("Mauricio Tienes una Cita Medica con tu mascota : " + fecha);
-            }
-        },anio, mes, dia);
-        dpd.show();
         TimePickerDialog tpd = new TimePickerDialog(calendar_act.this, new TimePickerDialog.OnTimeSetListener() {
             @Override
             public void onTimeSet(TimePicker timePicker, int hour, int minute) {
@@ -58,6 +49,17 @@ public class calendar_act extends AppCompatActivity {
             }
         },hora, minutos, true);
         tpd.show();
+
+        DatePickerDialog dpd = new DatePickerDialog(calendar_act.this, new DatePickerDialog.OnDateSetListener() {
+            @Override
+            public void onDateSet(DatePicker datePicker, int year, int month, int day) {
+
+                String fecha =  day + "/" + month + "/" + year;
+                citas.setText("Mauricio Tienes una Cita Medica con tu mascota : " + fecha);
+            }
+        },anio, mes, dia);
+        dpd.show();
+
 
     }
 
