@@ -1,0 +1,171 @@
+Index: .idea/.gitignore
+===================================================================
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+deleted file mode 100644
+--- a/.idea/.gitignore	(revision bea5a2db01fbb6bcef6928b518350aed090004b7)
++++ /dev/null	(revision bea5a2db01fbb6bcef6928b518350aed090004b7)
+@@ -1,3 +0,0 @@
+-# Default ignored files
+-/shelf/
+-/workspace.xml
+Index: .idea/compiler.xml
+===================================================================
+diff --git a/.idea/compiler.xml b/.idea/compiler.xml
+deleted file mode 100644
+--- a/.idea/compiler.xml	(revision bea5a2db01fbb6bcef6928b518350aed090004b7)
++++ /dev/null	(revision bea5a2db01fbb6bcef6928b518350aed090004b7)
+@@ -1,6 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="CompilerConfiguration">
+-    <bytecodeTargetLevel target="11" />
+-  </component>
+-</project>
+\ No newline at end of file
+Index: .idea/deploymentTargetDropDown.xml
+===================================================================
+diff --git a/.idea/deploymentTargetDropDown.xml b/.idea/deploymentTargetDropDown.xml
+deleted file mode 100644
+--- a/.idea/deploymentTargetDropDown.xml	(revision bea5a2db01fbb6bcef6928b518350aed090004b7)
++++ /dev/null	(revision bea5a2db01fbb6bcef6928b518350aed090004b7)
+@@ -1,17 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="deploymentTargetDropDown">
+-    <targetSelectedWithDropDown>
+-      <Target>
+-        <type value="QUICK_BOOT_TARGET" />
+-        <deviceKey>
+-          <Key>
+-            <type value="VIRTUAL_DEVICE_PATH" />
+-            <value value="$USER_HOME$/.android/avd/Pixel_4_API_31_3.avd" />
+-          </Key>
+-        </deviceKey>
+-      </Target>
+-    </targetSelectedWithDropDown>
+-    <timeTargetWasSelectedWithDropDown value="2021-11-12T17:33:42.780797Z" />
+-  </component>
+-</project>
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_home.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\n<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n    xmlns:tools=\"http://schemas.android.com/tools\"\n    android:layout_width=\"match_parent\"\n    android:layout_height=\"match_parent\"\n    android:background=\"@drawable/gradient_background\"\n    tools:context=\".Home_Act\">\n\n    <androidx.cardview.widget.CardView\n        android:layout_width=\"379dp\"\n        android:layout_height=\"691dp\"\n        android:layout_marginStart=\"16dp\"\n        android:layout_marginTop=\"16dp\"\n        android:layout_marginEnd=\"16dp\"\n        android:layout_marginBottom=\"24dp\"\n        app:cardCornerRadius=\"25dp\"\n        app:layout_constraintBottom_toBottomOf=\"parent\"\n        app:layout_constraintEnd_toEndOf=\"parent\"\n        app:layout_constraintStart_toStartOf=\"parent\"\n        app:layout_constraintTop_toTopOf=\"parent\" >\n\n        <androidx.constraintlayout.widget.ConstraintLayout\n            android:layout_width=\"match_parent\"\n            android:layout_height=\"match_parent\">\n\n            <LinearLayout\n                android:id=\"@+id/linearLayout6\"\n                android:layout_width=\"367dp\"\n                android:layout_height=\"110dp\"\n                android:layout_marginStart=\"16dp\"\n                android:layout_marginTop=\"16dp\"\n                android:layout_marginEnd=\"17dp\"\n                android:orientation=\"horizontal\"\n                app:layout_constraintEnd_toEndOf=\"parent\"\n                app:layout_constraintStart_toStartOf=\"parent\"\n                app:layout_constraintTop_toTopOf=\"parent\">\n\n                <ImageView\n                    android:id=\"@+id/imageView7\"\n                    android:layout_width=\"wrap_content\"\n                    android:layout_height=\"98dp\"\n                    android:layout_weight=\"1\"\n                    app:srcCompat=\"@drawable/icono\" />\n\n                <TextView\n                    android:layout_width=\"wrap_content\"\n                    android:layout_height=\"90dp\"\n                    android:layout_weight=\"1\"\n                    android:text=\"Bienvenido Mauricio, a tu app de Mascotas.\"\n                    android:textSize=\"24sp\"\n                    android:textStyle=\"bold\" />\n\n            </LinearLayout>\n\n            <LinearLayout\n                android:id=\"@+id/linearLayout7\"\n                android:layout_width=\"357dp\"\n                android:layout_height=\"254dp\"\n                android:layout_marginStart=\"13dp\"\n                android:layout_marginTop=\"31dp\"\n                android:layout_marginEnd=\"9dp\"\n                android:orientation=\"vertical\"\n                app:layout_constraintEnd_toEndOf=\"parent\"\n                app:layout_constraintStart_toStartOf=\"parent\"\n                app:layout_constraintTop_toBottomOf=\"@+id/linearLayout6\">\n\n                <VideoView\n                    android:id=\"@+id/videoView2\"\n                    android:layout_width=\"match_parent\"\n                    android:layout_height=\"wrap_content\" />\n            </LinearLayout>\n\n            <LinearLayout\n                android:id=\"@+id/linearLayout8\"\n                android:layout_width=\"362dp\"\n                android:layout_height=\"104dp\"\n                android:layout_marginStart=\"13dp\"\n                android:layout_marginTop=\"1dp\"\n                android:layout_marginEnd=\"5dp\"\n                android:orientation=\"horizontal\"\n                app:layout_constraintEnd_toEndOf=\"parent\"\n                app:layout_constraintStart_toStartOf=\"parent\"\n                app:layout_constraintTop_toBottomOf=\"@+id/textView10\">\n\n                <ImageButton\n                    android:layout_width=\"81dp\"\n                    android:layout_height=\"106dp\"\n                    android:layout_weight=\"1\"\n                    android:background=\"@android:color/transparent\"\n                    android:onClick=\"calendario\"\n                    app:srcCompat=\"@drawable/calendario\"\n                    tools:ignore=\"SpeakableTextPresentCheck\" />\n\n                <ImageButton\n                    android:layout_width=\"85dp\"\n                    android:layout_height=\"108dp\"\n                    android:layout_weight=\"1\"\n                    android:background=\"@android:color/transparent\"\n                    android:onClick=\"fichamascota\"\n                    app:srcCompat=\"@drawable/mascota\"\n                    tools:ignore=\"SpeakableTextPresentCheck\" />\n\n                <ImageButton\n                    android:layout_width=\"wrap_content\"\n                    android:layout_height=\"106dp\"\n                    android:layout_weight=\"1\"\n                    android:background=\"@android:color/transparent\"\n                    android:onClick=\"salud\"\n                    app:srcCompat=\"@drawable/salud\"\n                    tools:ignore=\"SpeakableTextPresentCheck,ImageContrastCheck\" />\n\n                <ImageButton\n                    android:id=\"@+id/imageButton\"\n                    android:layout_width=\"77dp\"\n                    android:layout_height=\"match_parent\"\n                    android:layout_weight=\"1\"\n                    android:background=\"@android:color/transparent\"\n                    app:srcCompat=\"@drawable/anadir\"\n                    tools:ignore=\"SpeakableTextPresentCheck\" />\n\n            </LinearLayout>\n\n            <TextView\n                android:id=\"@+id/textView10\"\n                android:layout_width=\"338dp\"\n                android:layout_height=\"39dp\"\n                android:layout_marginStart=\"20dp\"\n                android:layout_marginTop=\"30dp\"\n                android:layout_marginEnd=\"20dp\"\n                android:text=\"Que quieres hacer :\"\n                android:textSize=\"20sp\"\n                android:textStyle=\"bold\"\n                app:layout_constraintEnd_toEndOf=\"parent\"\n                app:layout_constraintStart_toStartOf=\"parent\"\n                app:layout_constraintTop_toBottomOf=\"@+id/linearLayout7\" />\n\n            <LinearLayout\n                android:layout_width=\"347dp\"\n                android:layout_height=\"50dp\"\n                android:layout_marginStart=\"24dp\"\n                android:layout_marginTop=\"8dp\"\n                android:layout_marginEnd=\"8dp\"\n                android:layout_marginBottom=\"47dp\"\n                android:orientation=\"horizontal\"\n                app:layout_constraintBottom_toBottomOf=\"parent\"\n                app:layout_constraintEnd_toEndOf=\"parent\"\n                app:layout_constraintStart_toStartOf=\"parent\"\n                app:layout_constraintTop_toBottomOf=\"@+id/linearLayout8\"\n                app:layout_constraintVertical_bias=\"0.0\">\n\n                <TextView\n                    android:layout_width=\"57dp\"\n                    android:layout_height=\"wrap_content\"\n                    android:layout_weight=\"1\"\n                    android:text=\"Calendario\"\n                    android:textSize=\"16sp\"\n                    android:textStyle=\"bold\" />\n\n                <TextView\n                    android:layout_width=\"62dp\"\n                    android:layout_height=\"wrap_content\"\n                    android:layout_weight=\"1\"\n                    android:text=\"    Mascota\"\n                    android:textSize=\"16sp\"\n                    android:textStyle=\"bold\" />\n\n                <TextView\n                    android:layout_width=\"wrap_content\"\n                    android:layout_height=\"wrap_content\"\n                    android:layout_weight=\"1\"\n                    android:text=\"    Salud\"\n                    android:textSize=\"16sp\"\n                    android:textStyle=\"bold\" />\n\n                <TextView\n                    android:layout_width=\"wrap_content\"\n                    android:layout_height=\"wrap_content\"\n                    android:layout_weight=\"1\"\n                    android:text=\" Online\"\n                    android:textSize=\"16sp\"\n                    android:textStyle=\"bold\" />\n            </LinearLayout>\n        </androidx.constraintlayout.widget.ConstraintLayout>\n    </androidx.cardview.widget.CardView>\n</androidx.constraintlayout.widget.ConstraintLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_home.xml b/app/src/main/res/layout/activity_home.xml
+--- a/app/src/main/res/layout/activity_home.xml	(revision bea5a2db01fbb6bcef6928b518350aed090004b7)
++++ b/app/src/main/res/layout/activity_home.xml	(date 1637273218000)
+@@ -111,7 +111,6 @@
+                     tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
+ 
+                 <ImageButton
+-                    android:id="@+id/imageButton"
+                     android:layout_width="77dp"
+                     android:layout_height="match_parent"
+                     android:layout_weight="1"
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"DesignSurface\">\r\n    <option name=\"filePathToZoomLevelMap\">\r\n      <map>\r\n        <entry key=\"..\\:/Users/MrCtrlZ/Desktop/basecalendariomascota/app/src/main/res/layout/activity_calendar.xml\" value=\"0.25\" />\r\n        <entry key=\"..\\:/Users/MrCtrlZ/Desktop/basecalendariomascota/app/src/main/res/layout/activity_eva.xml\" value=\"0.25\" />\r\n        <entry key=\"..\\:/Users/MrCtrlZ/Desktop/basecalendariomascota/app/src/main/res/layout/activity_fichamascota.xml\" value=\"0.25\" />\r\n        <entry key=\"..\\:/Users/MrCtrlZ/Desktop/basecalendariomascota/app/src/main/res/layout/activity_home.xml\" value=\"0.25\" />\r\n        <entry key=\"..\\:/Users/MrCtrlZ/Desktop/basecalendariomascota/app/src/main/res/layout/activity_info.xml\" value=\"0.25\" />\r\n        <entry key=\"..\\:/Users/MrCtrlZ/Desktop/basecalendariomascota/app/src/main/res/layout/activity_insumos.xml\" value=\"0.25\" />\r\n        <entry key=\"..\\:/Users/MrCtrlZ/Desktop/basecalendariomascota/app/src/main/res/layout/activity_iot.xml\" value=\"0.25\" />\r\n        <entry key=\"..\\:/Users/MrCtrlZ/Desktop/basecalendariomascota/app/src/main/res/layout/activity_main.xml\" value=\"0.25\" />\r\n        <entry key=\"..\\:/Users/MrCtrlZ/Desktop/basecalendariomascota/app/src/main/res/layout/activity_maps.xml\" value=\"0.25\" />\r\n        <entry key=\"..\\:/Users/MrCtrlZ/Desktop/basecalendariomascota/app/src/main/res/layout/activity_salud.xml\" value=\"0.25\" />\r\n        <entry key=\"..\\:/Users/MrCtrlZ/Desktop/basecalendariomascota/app/src/main/res/layout/activity_vacunas.xml\" value=\"0.25\" />\r\n        <entry key=\"..\\:/Users/mauri/AndroidStudioProjects/basecalendariomascota/app/src/main/res/drawable/gradient_background.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/mauri/AndroidStudioProjects/basecalendariomascota/app/src/main/res/layout/activity_calendar.xml\" value=\"0.165\" />\r\n        <entry key=\"..\\:/Users/mauri/AndroidStudioProjects/basecalendariomascota/app/src/main/res/layout/activity_eva.xml\" value=\"0.165\" />\r\n        <entry key=\"..\\:/Users/mauri/AndroidStudioProjects/basecalendariomascota/app/src/main/res/layout/activity_home.xml\" value=\"0.165\" />\r\n        <entry key=\"..\\:/Users/mauri/AndroidStudioProjects/basecalendariomascota/app/src/main/res/layout/activity_main.xml\" value=\"0.165\" />\r\n        <entry key=\"..\\:/Users/mauri/Desktop/basecalendariomascota/app/src/main/res/layout/activity_calendar.xml\" value=\"0.129981884057971\" />\r\n        <entry key=\"..\\:/Users/mauri/Desktop/basecalendariomascota/app/src/main/res/layout/activity_eva.xml\" value=\"0.165\" />\r\n        <entry key=\"..\\:/Users/mauri/Desktop/basecalendariomascota/app/src/main/res/layout/activity_info.xml\" value=\"0.129981884057971\" />\r\n        <entry key=\"..\\:/Users/mauri/Desktop/basecalendariomascota/app/src/main/res/layout/activity_main.xml\" value=\"0.165\" />\r\n        <entry key=\"..\\:/Users/mauri/Desktop/basecalendariomascota/app/src/main/res/layout/activity_maps.xml\" value=\"0.165\" />\r\n        <entry key=\"app/src/main/res/layout/activity_calendar.xml\" value=\"0.165\" />\r\n        <entry key=\"app/src/main/res/layout/activity_eva.xml\" value=\"0.11730072463768115\" />\r\n        <entry key=\"app/src/main/res/layout/activity_fichamascota.xml\" value=\"0.165\" />\r\n        <entry key=\"app/src/main/res/layout/activity_home.xml\" value=\"0.165\" />\r\n        <entry key=\"app/src/main/res/layout/activity_info.xml\" value=\"0.12273550724637682\" />\r\n        <entry key=\"app/src/main/res/layout/activity_insumos.xml\" value=\"0.25\" />\r\n        <entry key=\"app/src/main/res/layout/activity_iot.xml\" value=\"0.12273550724637682\" />\r\n        <entry key=\"app/src/main/res/layout/activity_main.xml\" value=\"0.25\" />\r\n        <entry key=\"app/src/main/res/layout/activity_maps.xml\" value=\"0.12273550724637682\" />\r\n        <entry key=\"app/src/main/res/layout/activity_mqtt.xml\" value=\"0.12273550724637682\" />\r\n        <entry key=\"app/src/main/res/layout/activity_salud.xml\" value=\"0.13994565217391305\" />\r\n        <entry key=\"app/src/main/res/layout/activity_vacunas.xml\" value=\"0.25\" />\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_11\" default=\"true\" project-jdk-name=\"Android Studio default JDK\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/build/classes\" />\r\n  </component>\r\n  <component name=\"ProjectType\">\r\n    <option name=\"id\" value=\"Android\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision bea5a2db01fbb6bcef6928b518350aed090004b7)
++++ b/.idea/misc.xml	(date 1690278855110)
+@@ -1,45 +1,6 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="DesignSurface">
+-    <option name="filePathToZoomLevelMap">
+-      <map>
+-        <entry key="..\:/Users/MrCtrlZ/Desktop/basecalendariomascota/app/src/main/res/layout/activity_calendar.xml" value="0.25" />
+-        <entry key="..\:/Users/MrCtrlZ/Desktop/basecalendariomascota/app/src/main/res/layout/activity_eva.xml" value="0.25" />
+-        <entry key="..\:/Users/MrCtrlZ/Desktop/basecalendariomascota/app/src/main/res/layout/activity_fichamascota.xml" value="0.25" />
+-        <entry key="..\:/Users/MrCtrlZ/Desktop/basecalendariomascota/app/src/main/res/layout/activity_home.xml" value="0.25" />
+-        <entry key="..\:/Users/MrCtrlZ/Desktop/basecalendariomascota/app/src/main/res/layout/activity_info.xml" value="0.25" />
+-        <entry key="..\:/Users/MrCtrlZ/Desktop/basecalendariomascota/app/src/main/res/layout/activity_insumos.xml" value="0.25" />
+-        <entry key="..\:/Users/MrCtrlZ/Desktop/basecalendariomascota/app/src/main/res/layout/activity_iot.xml" value="0.25" />
+-        <entry key="..\:/Users/MrCtrlZ/Desktop/basecalendariomascota/app/src/main/res/layout/activity_main.xml" value="0.25" />
+-        <entry key="..\:/Users/MrCtrlZ/Desktop/basecalendariomascota/app/src/main/res/layout/activity_maps.xml" value="0.25" />
+-        <entry key="..\:/Users/MrCtrlZ/Desktop/basecalendariomascota/app/src/main/res/layout/activity_salud.xml" value="0.25" />
+-        <entry key="..\:/Users/MrCtrlZ/Desktop/basecalendariomascota/app/src/main/res/layout/activity_vacunas.xml" value="0.25" />
+-        <entry key="..\:/Users/mauri/AndroidStudioProjects/basecalendariomascota/app/src/main/res/drawable/gradient_background.xml" value="0.1" />
+-        <entry key="..\:/Users/mauri/AndroidStudioProjects/basecalendariomascota/app/src/main/res/layout/activity_calendar.xml" value="0.165" />
+-        <entry key="..\:/Users/mauri/AndroidStudioProjects/basecalendariomascota/app/src/main/res/layout/activity_eva.xml" value="0.165" />
+-        <entry key="..\:/Users/mauri/AndroidStudioProjects/basecalendariomascota/app/src/main/res/layout/activity_home.xml" value="0.165" />
+-        <entry key="..\:/Users/mauri/AndroidStudioProjects/basecalendariomascota/app/src/main/res/layout/activity_main.xml" value="0.165" />
+-        <entry key="..\:/Users/mauri/Desktop/basecalendariomascota/app/src/main/res/layout/activity_calendar.xml" value="0.129981884057971" />
+-        <entry key="..\:/Users/mauri/Desktop/basecalendariomascota/app/src/main/res/layout/activity_eva.xml" value="0.165" />
+-        <entry key="..\:/Users/mauri/Desktop/basecalendariomascota/app/src/main/res/layout/activity_info.xml" value="0.129981884057971" />
+-        <entry key="..\:/Users/mauri/Desktop/basecalendariomascota/app/src/main/res/layout/activity_main.xml" value="0.165" />
+-        <entry key="..\:/Users/mauri/Desktop/basecalendariomascota/app/src/main/res/layout/activity_maps.xml" value="0.165" />
+-        <entry key="app/src/main/res/layout/activity_calendar.xml" value="0.165" />
+-        <entry key="app/src/main/res/layout/activity_eva.xml" value="0.11730072463768115" />
+-        <entry key="app/src/main/res/layout/activity_fichamascota.xml" value="0.165" />
+-        <entry key="app/src/main/res/layout/activity_home.xml" value="0.165" />
+-        <entry key="app/src/main/res/layout/activity_info.xml" value="0.12273550724637682" />
+-        <entry key="app/src/main/res/layout/activity_insumos.xml" value="0.25" />
+-        <entry key="app/src/main/res/layout/activity_iot.xml" value="0.12273550724637682" />
+-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+-        <entry key="app/src/main/res/layout/activity_maps.xml" value="0.12273550724637682" />
+-        <entry key="app/src/main/res/layout/activity_mqtt.xml" value="0.12273550724637682" />
+-        <entry key="app/src/main/res/layout/activity_salud.xml" value="0.13994565217391305" />
+-        <entry key="app/src/main/res/layout/activity_vacunas.xml" value="0.25" />
+-      </map>
+-    </option>
+-  </component>
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
++  <component name="ExternalStorageConfigurationManager" enabled="true" />
++  <component name="ProjectRootManager" version="2" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/build/classes" />
+   </component>
+   <component name="ProjectType">
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"VcsDirectoryMappings\">\n    <mapping directory=\"$PROJECT_DIR$\" vcs=\"Git\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+--- a/.idea/vcs.xml	(revision bea5a2db01fbb6bcef6928b518350aed090004b7)
++++ b/.idea/vcs.xml	(date 1689824872581)
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="VcsDirectoryMappings">
+-    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++    <mapping directory="" vcs="Git" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: .idea/gradle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"GradleMigrationSettings\" migrationVersion=\"1\" />\r\n  <component name=\"GradleSettings\">\r\n    <option name=\"linkedExternalProjectsSettings\">\r\n      <GradleProjectSettings>\r\n        <option name=\"testRunner\" value=\"GRADLE\" />\r\n        <option name=\"distributionType\" value=\"DEFAULT_WRAPPED\" />\r\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\r\n        <option name=\"modules\">\r\n          <set>\r\n            <option value=\"$PROJECT_DIR$\" />\r\n            <option value=\"$PROJECT_DIR$/app\" />\r\n          </set>\r\n        </option>\r\n      </GradleProjectSettings>\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/gradle.xml b/.idea/gradle.xml
+--- a/.idea/gradle.xml	(revision bea5a2db01fbb6bcef6928b518350aed090004b7)
++++ b/.idea/gradle.xml	(date 1690278924709)
+@@ -7,13 +7,9 @@
+         <option name="testRunner" value="GRADLE" />
+         <option name="distributionType" value="DEFAULT_WRAPPED" />
+         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+-        <option name="modules">
+-          <set>
+-            <option value="$PROJECT_DIR$" />
+-            <option value="$PROJECT_DIR$/app" />
+-          </set>
+-        </option>
++        <option name="gradleJvm" value="jbr-17" />
+       </GradleProjectSettings>
+     </option>
++    <option name="offlineMode" value="true" />
+   </component>
+ </project>
+\ No newline at end of file
